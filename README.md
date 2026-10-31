@@ -1,20 +1,11 @@
-# What This mod changes
-I'll put this at the bottom in case you want to be surprised
+# Description
+This is a less buggy version of the Jump Damage mod I streamed a while ago. I was asked multiple times to make it public, so here it is. It took a while to remove the bugs and localized, but it should be completed. I'll put what changes at the bottom in case you want to be surprised.
 
-# How To Install 
-(taken directly from [Seeky's Rel Loader](https://github.com/SeekyCt/spm-rel-loader/blob/master/ISO.md) so you don't have to click another link to get there)
-* Install [Wiimms ISO Tools](https://wit.wiimm.de/) if you haven't already
-    * You may need to restart your computer after installation if the commands aren't working
-* Open the folder with your SPM ISO in a command prompt
-* Run the command `wit x ISONAMEHERE extracted`
-    * Replace ISONAMEHERE with the name of your ISO
-* Navigate to `extracted/DATA/files/`
-    * This should contain folders like `a`, `eff` and `font`
-* Create a folder named `mod`
-* Copy the rel for the mod into this folder and rename it `mod.rel`
-* In the same location as before, run the command `wit copy --align-files extracted mod.wbfs`
-    * Feel free to delete the `extracted` folder after this is done if you want to save storage space
-* Your ISO is now patched, return to the tutorial that linked you here for instructions on what to do next
+# How To Install (Dolphin Patched ISO)
+* Download the zip file you need from releases. It will contain a mod.rel and loader.txt file
+* Create a gecko code (Right click -> properties -> Gecko Codes -> add new Code...) and copy the txt file's contents into it
+* Follow this guide to patch your iso: [Seeky's Rel Loader](https://github.com/SeekyCt/spm-rel-loader/blob/master/ISO.md)
+* I do not currently know if the mod is compatible with console as I could not get USB Loader to work.
 
 # Credits
 * [L5050](https://github.com/L5050) and [Seeky](https://github.com/SeekyCt) for the spm rel loader mod template (and this ReadMe's sources)
