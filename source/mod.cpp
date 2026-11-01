@@ -1,7 +1,7 @@
 #include "mod.h"
 #include "patch.h"
 
-#include <spm/camdrv.h>
+
 #include <spm/fontmgr.h>
 #include <spm/seqdrv.h>
 #include <spm/seqdef.h>

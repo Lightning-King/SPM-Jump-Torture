@@ -1,4 +1,21 @@
-## What This mod changes
+# Description
+This is a less buggy version of the Jump Damage mod I streamed a while ago. I was asked multiple times to make it public, so here it is. It took a while to remove the bugs and localized, but it should be completed. I'll put what changes at the bottom in case you want to be surprised.
+
+# Known Glitches (I'm not planning to patch these)
+* Swapping pixls while riding Carrie and at 1 hp will set you to 0 hp without killing
+* Getting Life shroomed while mounting Carrie freezes Carrie in place (you can swap pixls and swap back if this happens)
+
+# How To Install (Dolphin Patched ISO)
+* Download the zip file you need from releases. It will contain a mod.rel and loader.txt file
+* Create a gecko code (Right click -> properties -> Gecko Codes -> add new Code...) and copy the txt file's contents into it
+* Follow this guide to patch your iso: [Seeky's Rel Loader](https://github.com/SeekyCt/spm-rel-loader/blob/master/ISO.md)
+* I do not currently know if the mod is compatible with console as I could not get USB Loader to work.
+
+# Credits
+* [L5050](https://github.com/L5050) and [Seeky](https://github.com/SeekyCt) for the spm rel loader mod template (and this ReadMe's sources)
+* [Yme](https://github.com/shiken-yme) for the star effect function and reviewing my code
+
+# Actually What the mod does
 You will take damage when you:
   * Jump
   * Jump in a cutscene
@@ -6,31 +23,3 @@ You will take damage when you:
   * Fall off a ladder
   * Use a Spring
   * Swim (yes I know I'm evil)
-
-
-
-# Disclaimer
-
-Very little of this code is actually my own: this is a fork of SeekyCT's rel loader but merged with his spm-headers library. The purpose of this repo is to have a rel mod template ready at all times if I need it and so that I can help add things to the library if needed. Please take a look at [Seeky's original repo](https://github.com/SeekyCt/spm-rel-loader) before using this.
-
-# Custom Rel Loader for Super Paper Mario
-
-A project to allow rel files created by PistonMiner's rel tools to be ran in Super Paper Mario.
-
-The file "/mod/mod.rel" is loaded from the disc (add with [Riivolution](http://rvlution.net/wiki/Riivolution/) or by ISO patching with [Wiimms ISO Tools](https://wit.wiimm.de/)) and executed during boot, after the game's rel, by the cheat code given in the loader folder (source is in loader.s and can be assembled with a tool like [Pyiiasmh](https://github.com/JoshuaMKW/pyiiasmh) or [Codewrite](https://github.com/TheGag96/CodeWrite), or pre-assembled versions are available in the .txt files).
-
-# Regions & Revisions
-
-To change the target region or revsion for a rel, use `make rgX`, where rg is the region code ('eu', 'us', 'jp' or 'kr') and X is the revision number (0-1 for eu & jp, 0-2 for us, 0 for kr).
-
-To change the target for the loader, edit the definitions of REGION ('e' for eu, 'u' for us, 'j' for jp and 'k' for kr) and REVISION (0-1 for eu & jp, 0-2 for us, 0 for kr) and change the injection address in the tool you're using to assemble the gecko code to the corresponding one listed at the top of the file.
-
-## Contents
-  * loader: Gecko code to load and run a custom rel file in Super Paper Mario
-  * rel: Framework for writing code on-top of existing code in Super Paper Mario
-
-## Requirements
-  * pyelf2rel: a python package for converting a .elf file to a loadable .rel file
-
-## Credits
-  * **PistonMiner** and **Zephiles** for their work on the original TTYD rel loader this is based off of.
